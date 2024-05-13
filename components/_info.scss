@@ -1,0 +1,67 @@
+@import "./variables.scss";
+
+
+.main_info{
+    padding-top: 80px;
+    position: relative;
+    .svg_info{
+        position: absolute;
+        top:-125px;
+        right: 0;
+    }
+}
+
+.main_info_wrapper{
+    display: flex;
+    gap: 146px;
+    align-items: center;
+}
+
+.main_info_content{
+    h3{
+        @include unbounded400-32px;
+        color: $color-yellow;
+        margin-bottom: 40px;
+    }
+    a{
+        @include montserrat500-16;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        color: $color-yellow;
+    }
+}
+
+.main_info_text{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-bottom: 40px;
+    p{
+        @include montserrat500-16;
+        color: $color-white;
+        display: flex;
+        gap: 24px;
+        
+    }
+}
+
+.main_info_text_inner{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 500px;
+    ul{
+        padding-left: 62px;
+        margin: 5px 0px;
+        list-style: disc;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        li{
+            font-family: var(--font-family);
+            font-weight: 500;
+            font-size: 16px;
+            color: $color-white;
+        }
+    }
+}

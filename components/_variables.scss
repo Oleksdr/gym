@@ -1,0 +1,134 @@
+$color-yellow:#E4AA28;
+$color-white:#FAFAF8;
+$color-black:#1D1C1C;
+$color-orange:#CD920D;
+$color-gray:#AFAFAF;
+$color-dark-white:#D8D8D8;
+$color-dark-gray:#AFAFAF;
+
+@mixin montserrat400{
+    font-family: "Montserrat", sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+@mixin montserrat400-12px{
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+@mixin montserrat400-14px{
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+@mixin montserrat400-16px{
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+@mixin montserrat400-28px{
+    font-family: "Montserrat", sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+@mixin montserrat500{
+    font-family: "Montserrat", sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+@mixin montserrat500-20{
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+@mixin montserrat500-28{
+    font-family: "Montserrat", sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+@mixin montserrat500-14{
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+@mixin montserrat500-20{
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+@mixin montserrat500-16{
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@mixin unbounded400{
+    font-family: "Unbounded", sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+@mixin unbounded400-16px{
+    font-family: "Unbounded", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+@mixin unbounded400-18px{
+    font-family: "Unbounded", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+@mixin unbounded400-24px{
+    font-family: "Unbounded", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+@mixin unbounded400-32px{
+    font-family: "Unbounded", sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+@mixin unbounded400-56px{
+    font-family: "Unbounded", sans-serif;
+    font-size: 56px;
+    font-weight: 400;
+}
+
+@mixin unbounded500{
+    font-family: "Unbounded", sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+@mixin unbounded500-56px{
+    font-family: "Unbounded", sans-serif;
+    font-size: 56px;
+    font-weight: 500;
+}
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+main{
+    background-color: #191919;
+}
+
+footer{
+    background-color: #191919;
+}

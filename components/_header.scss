@@ -1,0 +1,143 @@
+@import "./variables.scss";
+
+
+header{
+    background-image: url("../img/Hero\ Section\ \(1\).png");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center ;
+}
+
+
+.header_menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 42px;
+}
+
+.header_wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 67px;
+}
+
+.menu{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    li{
+        padding: 8px 24px;
+        border: 1px solid $color-white;
+        border-radius: 50px;
+    }
+    a{
+        text-decoration: none;
+        @include montserrat400-12px;
+        text-transform: uppercase;
+        color: $color-white;
+    }
+}
+
+.header_svg{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header_info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_info_text{
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+}
+
+.header_info_text_title{
+    @include montserrat400-28px;
+    color: $color-white;
+    max-width: 200px;
+    &:after{
+        display: block;
+        content: "";
+        background: $color-yellow;
+        height: 2px;
+        margin-top: 10px;
+    }
+}
+
+.header_info_text_about{
+    margin-top: 20px;
+    @include unbounded500-56px;
+    text-transform: uppercase;
+    color: $color-white;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    span{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        &:after{
+            display: block;
+            content: "";
+            background: $color-white;
+            height: 6px;
+            width: 150px;
+            border-radius: 6px;
+        }
+    }
+    
+}
+
+.header_info_text_info{
+    @include montserrat500-28;
+    color: $color-white;
+}
+
+.header_bottom{
+    display: flex;
+    align-items: center;
+    gap: 26px;
+}
+
+.header_botom_button{
+    border-radius: 50px;
+    border: none;
+    padding: 20px 40px;
+    background: $color-yellow;
+    a{
+        text-decoration: none;
+        @include montserrat500-14;
+        text-transform: uppercase;
+        color: $color-black;
+    }
+}
+
+.header_bottom_info{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.header_bottom_info_text{
+    @include montserrat500-16;
+    color: $color-white;
+    span{
+        font-weight: 400;
+        color: $color-yellow;
+    }
+}
+
+.header_info_img{
+    display: flex;
+    position: relative;
+    svg{
+        position: absolute;
+        top: 62px;
+        right: 0;
+    }
+}
+

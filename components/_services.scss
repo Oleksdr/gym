@@ -1,0 +1,131 @@
+@import"./variables";
+
+
+.main_services{
+    padding-top: 80px;
+    position: relative;
+    .svg_services{
+        position: absolute;
+        top: -300px;
+    }
+    .main_services_exemples_svg{
+        position: absolute;
+        top: 155px;
+        right: 0;
+      }
+      .main_services_exemples_svg2{
+        position: absolute;
+        top: 38%;
+        left: 0;
+      }
+    h3{
+        @include unbounded400-32px;
+        color: $color-yellow;
+      
+    }
+}
+
+.main_services_exemples{
+    display: flex;
+    gap: 26px;
+    margin-top: 40px;
+    margin-bottom: 26px;
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+
+.main_services_exemples_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid $color-white;
+    box-sizing: border-box;
+    border-radius: 16px;
+    padding: 36px
+}
+
+.main_services_exemples_info_text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $color-yellow;
+    align-items: flex-start;
+    max-width: 500px;
+    h3{
+        @include unbounded400-24px;
+        color: $color-yellow;
+    }
+    p{
+        @include montserrat400-14px;
+        color: $color-white;
+    }
+    img{
+        margin-bottom: 20px;
+    }
+}
+
+.main_services_exemples_info_about{
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $color-yellow;
+    margin-bottom: 20px;
+    h3{
+        @include  montserrat500-20;
+        color: $color-white;
+    }
+}
+
+.main_services_exemples_info_about2{
+    margin-top: 20px;
+    h3{
+        @include  montserrat500-20;
+        color: $color-white;
+    }
+}
+
+.main_services_exemples_info_about_text{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 500px;
+    margin-top: 13px;
+    p{
+        display: flex;
+        gap: 20px;
+        @include montserrat400-14px;
+        color: $color-white;
+    }
+}
+
+.main_services_exemples_info_about_end{
+    h3{
+        @include unbounded400-24px;
+    }
+    p{
+        @include montserrat500-14;
+        color: $color-white;
+        margin-top: 10px;   
+    }
+    button{
+        margin-top: 20px;
+        border: 1px solid $color-yellow;
+        border-radius: 50px;
+        background: none;
+        padding: 20px 166px;
+        a{
+            text-decoration: none;
+            color: $color-yellow;
+        }
+    }
+}
+
+
+.main_info_text_inner_text2{
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+}

@@ -1,0 +1,56 @@
+@import"./variables.scss";
+
+footer{
+    padding-top: 80px;
+    border-top: 1px solid $color-yellow;
+    padding: 40px 100px;
+}
+
+.footer_wrpaper{
+    p{
+        text-align: center;
+        @include montserrat400-14px;
+        color: #f8f9fb;
+    }
+}
+
+.footer_menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+.end_menu{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    h3{
+        @include montserrat500-20;
+        text-transform: uppercase;
+        color: $color-white;
+    }
+}
+
+.footer_menu_svg{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    li{
+        @include  montserrat500-14;
+        display: flex;
+        color: $color-yellow;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+.contact_svg{
+    display: flex;
+    gap: 14px;
+    li{
+        @include  montserrat500-14;
+        color: $color-yellow;
+        gap: 10px;
+        display: flex;
+        align-items: center;
+    }
+}

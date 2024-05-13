@@ -1,0 +1,38 @@
+@import"./variables";
+
+.main_expirience{
+background-image: url("../img/metric\ section.png");
+background-repeat: no-repeat;
+background-size: cover;
+border-bottom: 1px solid $color-yellow;
+}
+
+.main_expirience_wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.main_expirience_info{
+    display: flex;
+    padding: 30px 21px;
+    width: 33%;
+    align-items: center;
+    border-right: 1px solid $color-dark-gray;
+    gap: 20px;
+    &:last-child{
+        border-right: none;
+    }
+    h3{
+        @include unbounded400-56px;
+        text-transform: uppercase;
+        color: $color-yellow;
+    }
+    p{
+        @include unbounded400-18px;
+        color: $color-white;
+        
+    }
+}
+
+
+

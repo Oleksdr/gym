@@ -1,0 +1,78 @@
+@import"./variables";
+
+.main_review{
+    padding-top: 86px;
+    position: relative;
+    .main_review_svg{
+        position: absolute;
+        top: -26%;
+        right: 0;
+    }
+}
+
+.main_review_wrapper{
+    h3{
+        @include unbounded400;
+        color: $color-yellow;
+    }
+    p{
+        @include unbounded400-18px;
+        margin-top: 40px;
+        color: $color-white;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        a{
+            text-decoration: underline;
+            text-decoration-skip-ink: none;
+            color: $color-yellow;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+    }
+}
+
+.main_review_content{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.main_review_content_info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.main_review_content_info_review{
+    border: 1px solid $color-white;
+    border-radius: 16px;
+    padding: 20px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    h3{
+        @include unbounded400-18px;
+        color: $color-white;
+        text-align: left;
+    }
+}
+
+.main_review_content_info_review2{
+    border: 1px solid $color-yellow;
+    border-radius: 16px;
+    padding: 20px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    max-width: 276px;
+    box-sizing: border-box;
+    h3{
+        @include unbounded400-18px;
+        color: $color-yellow;
+        text-align: left;
+    }
+}
