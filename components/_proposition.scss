@@ -7,7 +7,7 @@
     position: relative;
     border-bottom: 1px solid $color-yellow;
     padding-bottom: 77px;
-    padding-top: 90px;
+    padding-top: 60px;
     img{
         z-index: 1;
     }
@@ -18,8 +18,8 @@
     }
     .main_proposition_arrow{
         position: absolute;
-        top: 54%;
-        left: 57%;
+        top: 67%;
+        left: 74%;
     }
 }
 
@@ -50,7 +50,7 @@
         background: $color-yellow;
         cursor: pointer;
         position: relative;
-        z-index: 10;
+        z-index: 2;
         max-width: 208px;
        a{
         @include montserrat500-14;

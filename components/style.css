@@ -709,7 +709,7 @@ footer {
   position: relative;
   border-bottom: 1px solid #E4AA28;
   padding-bottom: 77px;
-  padding-top: 90px;
+  padding-top: 60px;
 }
 .main_proposition img {
   z-index: 1;
@@ -721,8 +721,8 @@ footer {
 }
 .main_proposition .main_proposition_arrow {
   position: absolute;
-  top: 54%;
-  left: 57%;
+  top: 67%;
+  left: 74%;
 }
 
 .main_proposition_wrapper {
@@ -757,7 +757,7 @@ footer {
   background: #E4AA28;
   cursor: pointer;
   position: relative;
-  z-index: 10;
+  z-index: 2;
   max-width: 208px;
 }
 .main_proposition_info button a {
@@ -784,29 +784,29 @@ footer {
 
 footer {
   padding-top: 80px;
-  border-top: 1px solid #E4AA28;
-  padding: 40px 100px;
 }
 
+.footer_wrpaper {
+  padding: 0 230px;
+  border-top: 1px solid #E4AA28;
+  display: flex;
+  flex-direction: column;
+}
 .footer_wrpaper p {
   text-align: center;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  color: #f8f9fb;
+  color: #FAFAF8;
 }
 
 .footer_menu {
+  margin-top: 40px;
   display: flex;
-  justify-content: space-between;
+  gap: 76px;
+  align-items: center;
 }
-
-.end_menu {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.end_menu h3 {
+.footer_menu h3 {
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
   font-weight: 500;
@@ -818,6 +818,7 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  margin-bottom: 20px;
 }
 .footer_menu_svg li {
   font-family: "Montserrat", sans-serif;
@@ -841,4 +842,16 @@ footer {
   gap: 10px;
   display: flex;
   align-items: center;
+}
+
+.svg_meu {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.conrainer_svg {
+  display: flex;
+  flex-direction: column;
 }/*# sourceMappingURL=style.css.map */
