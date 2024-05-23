@@ -1,9 +1,15 @@
 @import "./variables.scss";
+@import"./media.scss";
 
 
 .main_info{
     padding-top: 80px;
     position: relative;
+    svg{
+        @include phone{
+            display: none;
+        }
+    }
     .svg_info{
         position: absolute;
         top:-125px;
@@ -15,7 +21,26 @@
     display: flex;
     gap: 146px;
     align-items: center;
+    @include ipadair{
+        flex-direction: column;
+    }
+    @include surfacepro7{
+        flex-direction: column;
+    }
+    @include tablet{
+        flex-direction: column
+    }
+    @include phone{
+        gap: 30px;
+    }
 }
+
+.main_info_wrapper_img{ 
+    @include phone{
+        display: block;
+        width: 100%;
+    }
+    }
 
 .main_info_content{
     h3{
@@ -65,3 +90,4 @@
         }
     }
 }
+

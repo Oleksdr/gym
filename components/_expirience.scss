@@ -1,4 +1,5 @@
 @import"./variables";
+@import"./media.scss";
 
 .main_expirience{
 background-image: url("../img/metric\ section.png");
@@ -10,6 +11,18 @@ border-bottom: 1px solid $color-yellow;
 .main_expirience_wrapper{
     display: flex;
     justify-content: center;
+    @include tablet{
+        flex-direction: column;
+        align-items: center;
+    }
+    @include ipadair{
+        flex-direction: column;
+        align-items: center;
+    }
+    @include surfacepro7{
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .main_expirience_info{
@@ -19,6 +32,40 @@ border-bottom: 1px solid $color-yellow;
     align-items: center;
     border-right: 1px solid $color-dark-gray;
     gap: 20px;
+    @include phone{
+        border-bottom: 1px solid $color-dark-gray;
+        border-right: none;
+        &:last-child{
+            border-bottom: none;
+        }
+    }
+    @include tablet{
+            border-bottom: 1px solid $color-dark-gray;
+            border-right: none;
+            width: 65%;
+            &:last-child{
+                border-bottom: none;
+            }
+    }
+    @include ipadair{
+        border-bottom: 1px solid $color-dark-gray;
+        border-right: none;
+        width: 65%;
+        &:last-child{
+            border-bottom: none;
+        }
+    }
+    @include surfacepro7{
+        border-bottom: 1px solid $color-dark-gray;
+        border-right: none;
+        width: 65%;
+        &:last-child{
+            border-bottom: none;
+        }
+    }
+    @include phone{
+        width: 80%;
+    }
     &:last-child{
         border-right: none;
     }
@@ -26,11 +73,23 @@ border-bottom: 1px solid $color-yellow;
         @include unbounded400-56px;
         text-transform: uppercase;
         color: $color-yellow;
+        @include laptop{
+            font-size: 45px;
+        }
+        @include phone{
+            font-size: 35px;
+
+        }
     }
     p{
         @include unbounded400-18px;
         color: $color-white;
-        
+        @include laptop{
+            font-size: 13px;
+        }
+        @include phone{
+            font-size: 10px;
+        }
     }
 }
 

@@ -1,8 +1,14 @@
 @import"./variables";
+@import"./media.scss";
 
 .main_review{
     padding-top: 86px;
     position: relative;
+    svg{
+        @include phone{
+            display: none;
+        }
+       }
     .main_review_svg{
         position: absolute;
         top: -26%;
@@ -16,6 +22,16 @@
         color: $color-yellow;
     }
     p{
+        @include phone{
+            display: flex;
+            flex-direction: column;
+            font-size: 15px;
+        }
+        @include surfaceduo{
+            font-size: 14px;
+            display: flex;
+            flex-direction: column
+        }
         @include unbounded400-18px;
         margin-top: 40px;
         color: $color-white;
@@ -44,6 +60,15 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @include surfaceduo{
+        flex-direction: column;
+        div:not(:first-child){
+            display: none;
+        }
+    }
+    @include phone{
+        flex-direction: column;
+    }
 }
 
 
@@ -54,6 +79,10 @@
     display: flex;
     flex-direction: column;
     gap: 18px;
+    img{
+        display: block;
+        width: 100%;
+    }
     h3{
         @include unbounded400-18px;
         color: $color-white;
@@ -70,6 +99,10 @@
     gap: 18px;
     max-width: 276px;
     box-sizing: border-box;
+    img{
+        display: block;
+        width: 100%;
+    }
     h3{
         @include unbounded400-18px;
         color: $color-yellow;

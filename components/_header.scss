@@ -1,4 +1,5 @@
 @import "./variables.scss";
+@import "./media.scss";
 
 
 header{
@@ -14,6 +15,12 @@ header{
     align-items: center;
     justify-content: space-between;
     margin-top: 42px;
+    position: relative;
+    svg{
+       @include tablet{
+        z-index: 101;
+       }
+    }
 }
 
 .header_wrapper{
@@ -26,6 +33,18 @@ header{
     display: flex;
     gap: 20px;
     align-items: center;
+    @include surfacepro7{
+        display: none;
+    }
+    @include ipadair{
+        display: none;
+    }
+    @include phone{
+        display: none;
+    }
+    @include tablet{
+        display: none;
+    }
     li{
         padding: 8px 24px;
         border: 1px solid $color-white;
@@ -43,11 +62,32 @@ header{
     display: flex;
     align-items: center;
     gap: 10px;
+    @include surfacepro7{
+        display: none;
+    }
+    @include ipadair{
+        display: none;
+    }
+    @include phone{
+        display: none;
+    }
+    @include tablet{
+        display: none;
+    }
 }
 
 .header_info{
     display: flex;
     justify-content: space-between;
+    @include tablet{
+        flex-direction: column;
+    }
+    @include surfacepro7{
+        flex-direction: column;
+    }
+    @include ipadair{
+        flex-direction: column;
+    }
 }
 
 .header_info_text{
@@ -60,6 +100,9 @@ header{
     @include montserrat400-28px;
     color: $color-white;
     max-width: 200px;
+    @include phone{
+        width: 260%;
+    }
     &:after{
         display: block;
         content: "";
@@ -76,7 +119,16 @@ header{
     color: $color-white;
     margin-bottom: 12px;
     border-radius: 6px;
+    @include laptop{
+        font-size:40px;
+    }
     span{
+        @include ipadair{
+            flex-direction: column;
+        }
+        @include surfacepro7{
+            flex-direction: column;
+        }
         display: flex;
         align-items: center;
         gap: 15px;
@@ -95,12 +147,30 @@ header{
 .header_info_text_info{
     @include montserrat500-28;
     color: $color-white;
+    @include surfaceduo{
+        font-size: 18px;
+    }
+    @include phone{
+        text-align: center;
+        font-size: 18px;
+    }    
+   
+   
 }
 
 .header_bottom{
     display: flex;
     align-items: center;
     gap: 26px;
+    @include tablet{
+        flex-direction: column;
+    }
+    @include ipadair{
+        justify-content: center;
+    }
+    @include surfacepro7{
+        justify-content: center;
+    }
 }
 
 .header_botom_button{
@@ -108,6 +178,9 @@ header{
     border: none;
     padding: 20px 40px;
     background: $color-yellow;
+    @include laptop{
+        padding: 10px 20px;
+    }
     a{
         text-decoration: none;
         @include montserrat500-14;
@@ -125,6 +198,12 @@ header{
 .header_bottom_info_text{
     @include montserrat500-16;
     color: $color-white;
+    @include laptop{
+        width: 300px;
+    }
+    @include phone{
+        width: 245px;
+    }
     span{
         font-weight: 400;
         color: $color-yellow;
@@ -134,10 +213,206 @@ header{
 .header_info_img{
     display: flex;
     position: relative;
+    img{
+        @include phone{
+            width: 100%;
+            display: block;
+        }
+    }
     svg{
         position: absolute;
         top: 62px;
         right: 0;
+            @include phone{
+                display: block;
+                width: 30%;
+               top: 20px;
+            }
     }
+}
+
+.header_info_text_content{
+    .header_info_text_about{
+        @include tablet{
+            font-size: 40px;
+        }
+        @include phone{
+            font-size: 16px;
+        }
+    }
+    span{
+        @include tablet{
+            flex-direction: column;
+        }
+    }
+    @include tablet{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    @include ipadair{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    @include surfacepro7{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        gap: 20px;
+    }
+}
+
+.burger{
+    display: none;
+    @include tablet{
+        z-index: 101;
+        display: flex;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top: 30px;
+        border: 1px solid $color-white;
+        border-radius: 50px;
+        justify-content: space-around;
+        padding: 8px 16px;
+        align-items: center;
+        color: $color-white;
+        background: transparent;
+        gap: 6px;
+        .span_content{
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            span{
+                height: 1px;
+                width: 27px;
+                background-color: $color-white;
+            }
+        }
+        
+    }
+    @include ipadair{
+        z-index: 101;
+        display: flex;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top: 30px;
+        border: 1px solid $color-white;
+        border-radius: 50px;
+        justify-content: space-around;
+        padding: 8px 16px;
+        align-items: center;
+        color: $color-white;
+        background: transparent;
+        gap: 6px;
+        .span_content{
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            span{
+                height: 1px;
+                width: 27px;
+                background-color: $color-white;
+            }
+        }
+        
+    }
+    @include surfacepro7{
+        z-index: 101;
+        display: flex;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top: 30px;
+        border: 1px solid $color-white;
+        border-radius: 50px;
+        justify-content: space-around;
+        padding: 8px 16px;
+        align-items: center;
+        color: $color-white;
+        background: transparent;
+        gap: 6px;
+        .span_content{
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            span{
+                height: 1px;
+                width: 27px;
+                background-color: $color-white;
+            }
+        }  
+    }
+}
+
+
+.menu_mobile{
+    display: none;
+    @include  tablet{
+        align-items: center;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        min-height: 100%;
+        background-color: $color-black;
+        z-index: 100;
+        padding-top: 141px;
+        gap: 80px;
+    }
+    @include  ipadair{
+        align-items: center;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        min-height: 100%;
+        background-color: $color-black;
+        z-index: 100;
+        padding-top: 141px;
+        gap: 80px;
+    }
+    @include  surfacepro7{
+        align-items: center;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        min-height: 100%;
+        background-color: $color-black;
+        z-index: 100;
+        padding-top: 141px;
+        gap: 80px;
+    }
+}
+
+.menu_mobile_list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    a{
+        @include montserrat500-20;
+        color: $color-white;
+        text-decoration: none;
+    }
+}
+
+.menu_mobile_social{
+    display: flex;
+    gap: 10px;
+}
+
+
+.active{
+    display: flex;
 }
 
